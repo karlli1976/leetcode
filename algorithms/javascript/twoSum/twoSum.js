@@ -64,23 +64,23 @@ var twoSum = function(nums, target) {
   }
   
   // ver3: run 2 times, 52ms, 40ms
-  var map = new Map();
+  // var map = new Map();
   
-  for (var i=0; i<nums.length; i++) {
-    var complement = target - nums[i];
+  // for (var i=0; i<nums.length; i++) {
+  //   var complement = target - nums[i];
     
-    // console.log("nums[" + i + "]=" + nums[i] + ", complement=" + complement);
+  //   // console.log("nums[" + i + "]=" + nums[i] + ", complement=" + complement);
     
-    if (map.has(complement)) {
-      // if (i < map.get(complement)) {
-      //   return [i, map.get(complement)];
-      // }
+  //   if (map.has(complement)) {
+  //     // if (i < map.get(complement)) {
+  //     //   return [i, map.get(complement)];
+  //     // }
       
-      return [map.get(complement), i];
-    }
+  //     return [map.get(complement), i];
+  //   }
     
-    map.set(nums[i], i);
-  }
+  //   map.set(nums[i], i);
+  // }
   
   
   // ver 2: 60ms
